@@ -59,24 +59,42 @@ select#country:focus {
     margin: 20px 0;
 }
 
-.categories ul {
-    list-style: none;
+div.button-categories {
     display: flex;
-    gap: 10px;
     justify-content: center;
 }
 
-.categories ul li {
-    padding: 10px 20px;
-    background-color: #333;
-    border-radius: 5px;
+div.button-categories button{
+    position: relative;
+    display: inline-block;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    height: 36px;
+    line-height: 27px;
+    min-width: 54px;
+    padding: 0 16px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: pre;
+    margin: 18px;
+    transition: box-shadow .15s,transform .15s;
+    
+
 }
 
-.categories ul li:hover {
-    background-color: #555;
-}
+div.button-categories button:hover {
+    background-color: rgba(255, 255, 255, 0.812);
+    position: relative;
+    top: -2px;
+    opacity: 1
+  }
 
 .image-display img {
     max-width: 100%; /* L'image ne dépasse pas la largeur du conteneur */
@@ -146,8 +164,12 @@ footer {
     }
 }
 
+.buy-options {
+    display: none;
+}
+
 #france-mb {
-    display: block;
+    display: none;
 }
 
 #france-monitor {
