@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASrock</title>
+    <link rel="stylesheet" href="header/style_header.css">
+    <link rel="stylesheet" href="styles_ou_acheter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="ou_acheter.js"></script>
+    <script src="header/main.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav">
+                <a href="/Final Ver/Index/index.html"><img src="header/image/logo-asrock.webp" id="nav-left" alt="Logo Asrock"></a>
+                <ul class="nav-middle">
+                    <li class="nav-li"><a class="nav-button" href="#" id="products-button">Products</a></li>
+                    <li class="nav-li"><a class="nav-button" href="/Final Ver/Informations/news.html" type="button">Informations</a></li>
+                    <li class="nav-li"><a class="nav-button" href="#" type="button">Support</a></li>
+                    <li class="nav-li"><a class="nav-button" href="#" type="button">Ou acheter</a></li>
+                </ul>
+                <div class="nav-right">
+                    <input class="nav-search-bar" type="search"> 
+                    <button id="nav-button-login"><i class="fa-solid fa-right-to-bracket"></i></button>
+                    <button id="nav-button-langue"><i class="fa-solid fa-language"></i></button>
+                </div>
+            </div>
+        </nav>
+    </header>   
+    <div id="toggle-products">
+        <div class="flex-products">
+            <li><a href="#"><img class="image" src="header/Image/menu-MB.webp" alt="Carte Mères"><br>Carte Mères</a></li>
+            <li><a href="#"><img class="image" src="header/Image/menu-GraphicsCard.webp" alt="Carte Graphique"><br>Carte Graphique</a></li>
+            <li><a href="#"><img class="image" src="header/Image/menu-Monitors.webp" alt="Gaming Monitor"><br>Gaming Monitor</a></li>
+            <li><a href="#"><img class="image" src="header/Image/menu-MiniPC.webp" alt="Mini PC"><br>Mini PC</a></li>
+            <li><a href="#"><img class="image" src="header/Image/menu-IPC.webp" alt="PCs Industriels"><br>PCs Industriels</a></li>
+            <li><a href="#"><img class="image" src="header/Image/menu-Server.webp" alt="Serveurs / Station de Travail"><br>Serveurs / Station de Travail</a></li>
+        </div>
+    </div>
+    <div id="login-popup" class="popup">
+        <div class="login-content">
+            <span class="close">&times;</span>
+            <div class="login-header">
+                <h2>Login</h2>
+                <a href="#" class="register-link">Register</a>
+            </div>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Enter</button>
+            </form>
+        </div>
+    </div>
+    <div id="register-popup" class="popup">
+        <div class="login-content">
+            <span class="close">&times;</span>
+            <div class="login-header">
+                <h2>Register</h2>
+            </div>
+            <form id="register-form">
+                <input type="email" id="register-email" placeholder="Email" required>
+                <input type="text" id="register-username" placeholder="Username" required>
+                <input type="password" id="register-password" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+    <div id="language-popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Language</h2>
+            <input type="search" id="language-search" placeholder="Recherche ta langue">
+            <ul id="language-list">
+                <!-- Liste des langues qui seront filtrées dynamiquement -->
+                <li>Français</li>
+                <li>English</li>
+                <li>Español</li>
+                <li>Deutsch</li>
+                <li>Italiano</li>
+                <li>Português</li>
+                <li>中文</li>
+                <li>日本語</li>
+                <li>Русский</li>
+            </ul>
+        </div>
+    </div>      
+    <main>
+        <section class="where-to-buy">
+            <h1>Where to Buy</h1>
+            <label for="country">Choose your country :</label>
+            <select id="country">
+                <option value="france">France</option>
+                <option value="usa">USA</option>
+                <option value="japan">Japan</option>
+            </select>
+        </section>
+
+        <section class="buy-options">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Distributor</th>
+                        <th>E-tailers</th>
+                        <th>Resellers</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Distributor 1</td>
+                        <td>E-tailer 1</td>
+                        <td>Reseller 1</td>
+                    </tr>
+                    <tr>
+                        <td>Distributor 2</td>
+                        <td>E-tailer 2</td>
+                        <td>Reseller 2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="categories">
+            <h2>Categories</h2>
+            <ul>
+                <li data-category="motherboard">Motherboard</li>
+                <li data-category="monitor">Monitor</li>
+                <li data-category="graphics-card">Graphics Card</li>
+                <li data-category="mini-pc">Mini PC</li>
+                <li data-category="networking">Networking</li>
+            </ul>
+        </section>
+
+        <section class="image-display">
+            <img id="category-image" src="images/motherboard.jpg" alt="Category Image">
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-sections">
+            <div class="footer-section">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">Company Info</a></li>
+                    <li><a href="#">Investor</a></li>
+                    <li><a href="#">News</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>New</h4>
+                <ul>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Download</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Community</h4>
+                <ul>
+                    <li><a href="#">Forum</a></li>
+                    <li><a href="#">Social Media</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Your Company. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

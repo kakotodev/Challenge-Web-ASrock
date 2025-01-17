@@ -1,0 +1,140 @@
+/* La grosse tête*/
+
+
+/* Pied */
+footer {
+    background-color: #111;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #333;
+    color: #777;
+}
+
+/* Section principale */
+div.main-content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+div.main-content img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Carrousel */
+div#product-carousel {
+    padding: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    overflow-x: auto; /* Active le défilement horizontal */
+    white-space: nowrap; /* Force l'affichage des produits sur une seule ligne */
+    margin-top: 20px;
+    scroll-behavior: smooth; /* Défilement fluide */
+}
+
+div#product-carousel::-webkit-scrollbar {
+    height: 8px; /* Hauteur de la barre de défilement */
+}
+
+div#product-carousel::-webkit-scrollbar-thumb {
+    background: #888; /* Couleur de la barre */
+    border-radius: 4px; /* Coins arrondis */
+}
+
+div#product-carousel::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Couleur au survol */
+}
+
+div#product-carousel a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+/* Produits */
+.product {
+    display: inline-block; /* Affichage en ligne pour le défilement horizontal */
+    margin: 0 10px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px;
+    height: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product:hover {
+    transform: scale(1.05); /* Zoom au survol */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.img-product {
+    max-width: 100%;
+    max-height: 100px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+h4 {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    /* Masquer le contenu principal du footer */
+    .footer-content {
+        display: none;
+    }
+
+    /* Afficher uniquement le texte de copyright */
+    .footer-bottom {
+        display: block;
+    }
+}
