@@ -19,8 +19,8 @@
                 <ul class="nav-middle">
                     <li class="nav-li"><a class="nav-button" href="#" id="products-button">Products</a></li>
                     <li class="nav-li"><a class="nav-button" href="/Final Ver/Informations/news.html" type="button">Informations</a></li>
-                    <li class="nav-li"><a class="nav-button" href="#" type="button">Support</a></li>
-                    <li class="nav-li"><a class="nav-button" href="#" type="button">Ou acheter</a></li>
+                    <li class="nav-li"><a class="nav-button" href="/Final Ver/Support/support.html" type="button">Support</a></li>
+                    <li class="nav-li"><a class="nav-button" href="/Final Ver/Ou acheter/ou_acheter.html" type="button">Ou acheter</a></li>
                 </ul>
                 <div class="nav-right">
                     <input class="nav-search-bar" type="search"> 
@@ -32,9 +32,9 @@
     </header>   
     <div id="toggle-products">
         <div class="flex-products">
-            <li><a href="#"><img class="image" src="header/Image/menu-MB.webp" alt="Carte Mères"><br>Carte Mères</a></li>
-            <li><a href="#"><img class="image" src="header/Image/menu-GraphicsCard.webp" alt="Carte Graphique"><br>Carte Graphique</a></li>
-            <li><a href="#"><img class="image" src="header/Image/menu-Monitors.webp" alt="Gaming Monitor"><br>Gaming Monitor</a></li>
+            <li><a href="https://www.asrock.com/mb/index.fr.asp"><img class="image" src="header/Image/menu-MB.webp" alt="Carte Mères"><br>Carte Mères</a></li>
+            <li><a href="https://www.asrock.com/Graphics-Card/index.fr.asp"><img class="image" src="header/Image/menu-GraphicsCard.webp" alt="Carte Graphique"><br>Carte Graphique</a></li>
+            <li><a href="https://www.asrock.com/Monitors/index.fr.asp"><img class="image" src="header/Image/menu-Monitors.webp" alt="Gaming Monitor"><br>Gaming Monitor</a></li>
             <li><a href="#"><img class="image" src="header/Image/menu-MiniPC.webp" alt="Mini PC"><br>Mini PC</a></li>
             <li><a href="#"><img class="image" src="header/Image/menu-IPC.webp" alt="PCs Industriels"><br>PCs Industriels</a></li>
             <li><a href="#"><img class="image" src="header/Image/menu-Server.webp" alt="Serveurs / Station de Travail"><br>Serveurs / Station de Travail</a></li>
@@ -95,10 +95,12 @@
                 <option value="france">France</option>
                 <option value="usa">USA</option>
                 <option value="japan">Japan</option>
+                <option value="Palestine">Palestine</option>
+                <option value="Israel Caca">Israel Caca</option>
             </select>
         </section>
 
-        <section class="buy-options">
+        <section class="buy-options" id="france-mb">
             <table>
                 <thead>
                     <tr>
@@ -121,27 +123,120 @@
                 </tbody>
             </table>
         </section>
+        <section class="buy-options" id="france-monitor">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Distributor</th>
+                        <th>E-tailers</th>
+                        <th>Resellers</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Distributor 1</td>
+                        <td>E-tailer 1</td>
+                        <td>Reseller 1</td>
+                    </tr>
+                    <tr>
+                        <td>Distributor 2</td>
+                        <td>E-tailer 2</td>
+                        <td>Reseller 2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="buy-options" id="france-graphics-card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Distributor</th>
+                        <th>E-tailers</th>
+                        <th>Resellers</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Distributor 1</td>
+                        <td>E-tailer 1</td>
+                        <td>Reseller 1</td>
+                    </tr>
+                    <tr>
+                        <td>Distributor 2</td>
+                        <td>E-tailer 2</td>
+                        <td>Reseller 2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="buy-options" id="france-minipc">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Distributor</th>
+                        <th>E-tailers</th>
+                        <th>Resellers</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Distributor 1</td>
+                        <td>E-tailer 1</td>
+                        <td>Reseller 1</td>
+                    </tr>
+                    <tr>
+                        <td>Distributor 2</td>
+                        <td>E-tailer 2</td>
+                        <td>Reseller 2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="buy-options" id="france-networking">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Distributor</th>
+                        <th>E-tailers</th>
+                        <th>Resellers</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Distributor 1</td>
+                        <td>E-tailer 1</td>
+                        <td>Reseller 1</td>
+                    </tr>
+                    <tr>
+                        <td>Distributor 2</td>
+                        <td>E-tailer 2</td>
+                        <td>Reseller 2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
 
         <section class="categories">
             <h2>Categories</h2>
             <ul>
-                <li data-category="motherboard">Motherboard</li>
-                <li data-category="monitor">Monitor</li>
-                <li data-category="graphics-card">Graphics Card</li>
-                <li data-category="mini-pc">Mini PC</li>
-                <li data-category="networking">Networking</li>
+                <li>Motherboard</li>
+                <li>Monitor</li>
+                <li>Graphics Card</li>
+                <li>Mini PC</li>
+                <li>Networking</li>
             </ul>
         </section>
 
         <section class="image-display">
-            <img id="category-image" src="images/motherboard.jpg" alt="Category Image">
+            <img id="category-image" src="image/motherboard.jpg" alt="Category Image">
         </section>
     </main>
 
     <footer>
-        <div class="footer-sections">
+        <div class="footer-content">
             <div class="footer-section">
-                <h4>About</h4>
+                <h3>About</h3>
                 <ul>
                     <li><a href="#">Company Info</a></li>
                     <li><a href="#">Investor</a></li>
@@ -149,21 +244,21 @@
                 </ul>
             </div>
             <div class="footer-section">
-                <h4>New</h4>
+                <h3>New</h3>
                 <ul>
                     <li><a href="#">Products</a></li>
                     <li><a href="#">Events</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h4>Support</h4>
+                <h3>Support</h3>
                 <ul>
                     <li><a href="#">FAQ</a></li>
                     <li><a href="#">Download</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h4>Community</h4>
+                <h3>Community</h3>
                 <ul>
                     <li><a href="#">Forum</a></li>
                     <li><a href="#">Social Media</a></li>
@@ -171,7 +266,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            &copy; 2025 Your Company. All rights reserved.
+            <p>&copy; 2024 ASRock Inc. All Rights Reserved.</p>
         </div>
     </footer>
 </body>
